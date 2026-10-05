@@ -2,7 +2,7 @@ import { Button, Col, ListGroup, Row } from 'react-bootstrap';
 import { StarFill } from 'react-bootstrap-icons';
 
 // Hiển thị 1 phim
-function MovieItem({ movie, onToggleFavorite }) {
+function MovieItem({ movie, onToggleFavorite, onShowDetail }) {
     return (
         <ListGroup.Item>
             {/* Dòng thông tin: title, genre, year, rating */}
@@ -25,8 +25,12 @@ function MovieItem({ movie, onToggleFavorite }) {
                         {movie.favorite ? 'Đã thích' : 'Yêu thích'}
                     </Button>
 
-                    {/* TODO: làm trang chi tiết sau (MovieDetail.js) */}
-                    <Button size="sm" className="px-5" variant="outline-primary">
+                    <Button
+                        size="sm"
+                        className="px-5"
+                        variant="outline-primary"
+                        onClick={() => onShowDetail(movie)}
+                    >
                         Chi tiết
                     </Button>
                 </Col>
