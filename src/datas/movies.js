@@ -64,5 +64,16 @@ export const movies = [
         duration: 106,
         description:
             "Two young people mysteriously experience each other's lives."
+    },
+     {
+        id: 7,
+        title: "1231231",
+        genre: "Romance",
+        year: 2016,
+        rating: 2,
+        director: "Makoto Shinkai",
+        duration: 106,
+        description:
+            "Two young people mysteriously experience each other's lives."
     }
 ];
